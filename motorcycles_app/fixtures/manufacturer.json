@@ -1,0 +1,110 @@
+[
+  {
+    "pk": 1,
+    "model": "motorcycles_app.manufacturer",
+    "fields": {
+      "name": "Suzuki",
+      "country": "Japain",
+      "founded": 1909
+    }
+  },
+  {
+    "pk": 2,
+    "model": "motorcycles_app.manufacturer",
+    "fields": {
+      "name": "Honda",
+      "country": "Japain",
+      "founded": 1946
+    }
+  },
+  {
+    "pk": 3,
+    "model": "motorcycles_app.manufacturer",
+    "fields": {
+      "name": "Yamaha",
+      "country": "Japain",
+      "founded": 1955
+    }
+  },
+  {
+    "pk": 4,
+    "model": "motorcycles_app.manufacturer",
+    "fields": {
+      "name": "Shineray",
+      "country": "China",
+      "founded": 2002
+    }
+  },
+  {
+    "pk": 5,
+    "model": "motorcycles_app.manufacturer",
+    "fields": {
+      "name": "Haojue",
+      "country": "China",
+      "founded": 1992
+    }
+  },
+  {
+    "pk": 6,
+    "model": "motorcycles_app.manufacturer",
+    "fields": {
+      "name": "BMW",
+      "country": "German",
+      "founded": 1916
+    }
+  },
+  {
+    "pk": 7,
+    "model": "motorcycles_app.manufacturer",
+    "fields": {
+      "name": "Dafra",
+      "country": "Brazil",
+      "founded": 2007
+    }
+  },
+  {
+    "pk": 8,
+    "model": "motorcycles_app.manufacturer",
+    "fields": {
+      "name": "Triumph",
+      "country": "England",
+      "founded": 1902
+    }
+  },
+  {
+    "pk": 9,
+    "model": "motorcycles_app.manufacturer",
+    "fields": {
+      "name": "Royal Enfield",
+      "country": "India",
+      "founded": 1955
+    }
+  },
+  {
+    "pk": 10,
+    "model": "motorcycles_app.manufacturer",
+    "fields": {
+      "name": "Harley-Davidson",
+      "country": "United States",
+      "founded": 1903
+    }
+  },
+  {
+    "pk": 11,
+    "model": "motorcycles_app.manufacturer",
+    "fields": {
+      "name": "Ducati",
+      "country": "Italy",
+      "founded": 1926
+    }
+  },
+  {
+    "pk": 12,
+    "model": "motorcycles_app.manufacturer",
+    "fields": {
+      "name": "KTM",
+      "country": "Austria",
+      "founded": 1934
+    }
+  }
+]

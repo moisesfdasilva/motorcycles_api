@@ -1,0 +1,26 @@
+[
+  {
+    "pk": 1,
+    "model": "motorcycles_app.motorcycle",
+    "fields": {
+      "model": "GSX-R 750",
+      "manufacturer": 1,
+      "year": 1985,
+      "engine_cc": 750,
+      "type": "sport bike",
+      "color": "blue and white"
+    }
+  },
+  {
+    "pk": 2,
+    "model": "motorcycles_app.motorcycle",
+    "fields": {
+      "model": "XT 600Z Ténéré",
+      "manufacturer": 3,
+      "year": 1988,
+      "engine_cc": 595,
+      "type": "sport bike",
+      "color": "blue with yellow details"
+    }
+  }
+]

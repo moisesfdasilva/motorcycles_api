@@ -9,7 +9,7 @@ class ManufacturerSerializer(serializers.ModelSerializer):
 
 
 class MotorcycleSerializer(serializers.ModelSerializer):
-    manufacturer = ManufacturerSerializer(many=True, read_only=True)
+    manufacturer = ManufacturerSerializer(many=False, read_only=True)
 
     class Meta:
         model = Motorcycle
