@@ -1,5 +1,5 @@
 from django.urls import path
-from .apiviews import ManufacturerList, MotorcycleList
+from .views import ManufacturerList, MotorcycleList
 
 
 urlpatterns = [
