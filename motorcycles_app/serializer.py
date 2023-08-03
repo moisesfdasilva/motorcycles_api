@@ -9,7 +9,8 @@ class ManufacturerSerializer(serializers.ModelSerializer):
 
 
 class MotorcycleSerializer(serializers.ModelSerializer):
-    manufacturer = ManufacturerSerializer(many=False, read_only=True)
+    manufacturer = serializers.PrimaryKeyRelatedField(
+        queryset=Manufacturer.objects.all(), many=False)
 
     class Meta:
         model = Motorcycle

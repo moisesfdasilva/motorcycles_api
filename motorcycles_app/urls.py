@@ -1,8 +1,10 @@
 from django.urls import path
-from .views import get_all_manufacturers, get_all_motorcycles
+from . import views
 
 
 urlpatterns = [
-    path("manufacturer/all", get_all_manufacturers, name="manufacturers_list"),
-    path("motorcycle/all", get_all_motorcycles, name="motorcycles_detail")
+    path("manufacturer/all", views.get_all_manufacturers),
+    path("motorcycle/all", views.get_all_motorcycles),
+    path("manufacturer/new", views.new_manufacturer),
+    path("motorcycle/new", views.new_motorcycle),
 ]

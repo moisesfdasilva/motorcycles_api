@@ -22,5 +22,17 @@
       "type": "dual sport",
       "color": "blue with yellow details"
     }
+  },
+  {
+    "pk": 3,
+    "model": "motorcycles_app.motorcycle",
+    "fields": {
+      "model": "GSX 1300-R HAYABUSA",
+      "manufacturer": 1,
+      "year": 2005,
+      "engine_cc": 1300,
+      "type": "sport bike",
+      "color": "black"
+    }
   }
 ]

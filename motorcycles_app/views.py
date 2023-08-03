@@ -17,3 +17,21 @@ def get_all_motorcycles(request):
     queryset = Motorcycle.objects.all()
     data = MotorcycleSerializer(queryset, many=True).data
     return Response(data)
+
+
+@api_view(['POST'])
+def new_manufacturer(request):
+    serializer = ManufacturerSerializer(data=request.data)
+    if serializer.is_valid(raise_exception=True):
+        serializer.save()
+        return Response(serializer.data)
+    return Response({"error": "bad request"}, status=404)
+
+
+@api_view(['POST'])
+def new_motorcycle(request):
+    serializer = MotorcycleSerializer(data=request.data)
+    if serializer.is_valid(raise_exception=True):
+        serializer.save()
+        return Response(serializer.data)
+    return Response({"error": "bad request"}, status=404)
