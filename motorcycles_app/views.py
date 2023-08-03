@@ -1,14 +1,19 @@
-from rest_framework import generics
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 from .models import Manufacturer, Motorcycle
 from .serializer import ManufacturerSerializer, MotorcycleSerializer
 
 
 # Create your views here.
-class ManufacturerList(generics.ListCreateAPIView):
+@api_view(['GET'])
+def get_all_manufacturers(request):
     queryset = Manufacturer.objects.all()
-    serializer_class = ManufacturerSerializer
+    data = ManufacturerSerializer(queryset, many=True).data
+    return Response(data)
 
 
-class MotorcycleList(generics.ListCreateAPIView):
+@api_view(['GET'])
+def get_all_motorcycles(request):
     queryset = Motorcycle.objects.all()
-    serializer_class = MotorcycleSerializer
+    data = MotorcycleSerializer(queryset, many=True).data
+    return Response(data)
