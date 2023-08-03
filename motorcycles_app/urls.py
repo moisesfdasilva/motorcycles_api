@@ -7,4 +7,5 @@ urlpatterns = [
     path("motorcycle/all", views.get_all_motorcycles),
     path("manufacturer/new", views.new_manufacturer),
     path("motorcycle/new", views.new_motorcycle),
+    path("manufacturer/<int:pk>", views.manufacturer_by_pk),
 ]
